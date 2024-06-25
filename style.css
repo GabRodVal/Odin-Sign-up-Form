@@ -1,0 +1,183 @@
+@font-face {
+  font-family: norse-font;
+  src: url('res/Norse-Bold.otf');
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  a:link, a:visited {
+    color: whitesmoke;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  } 
+
+  #m-box{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #logo-box{
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  #bib-img {
+    position: relative;
+    height: 100vh;
+    width: 40vw;
+    object-fit: cover;
+    object-position: right;
+    z-index: 3;
+  }
+
+  .odin-logo{
+    display: flex;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    top: -75vh;
+    z-index: 4;
+  }
+
+  #logo-img{
+    height: 24vh;
+  }
+
+  #logo-text{
+    font-size: 12vh;
+    font-family: norse-font, Roboto, system-ui, "Segoe UI";
+    color: whitesmoke;
+  }
+
+  #credits{
+    display: flex;
+    position: relative;
+    font-size: 2vh;
+    font-family:Roboto, system-ui, "Segoe UI";
+    color: whitesmoke;
+    top: -32vh;
+    z-index: 4;
+  }
+
+  #w-bg{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+    background-color: rgb(16,42,67);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #bland-text{
+    align-self: flex-start;
+    font-family: Roboto, system-ui, "Segoe UI";
+    font-size: 3vh;
+    padding: 1em;
+    color: whitesmoke;
+  }
+
+  .full-form{
+    display: flex;
+    font-family: Roboto, system-ui, "Segoe UI";
+  }
+
+  .form-item{
+    display: grid;
+    position: relative;
+    padding-bottom: 1vw;
+    padding-left: 4vw;
+  }
+
+  .form-label{
+    color:whitesmoke
+  }
+
+  .form-input{
+    width: 16vw;
+    height: 4vh;
+    color: rgb(16,42,67);
+    border: 2px solid rgb(240,244,248);
+    border-radius: 4px;
+    background-color: rgb(188,204,220);
+  }
+
+  .form-input:invalid{
+    color: red;
+  }
+
+  #signup-text{
+    justify-self: left;
+    padding: 2vh;
+    font-family: Roboto, system-ui, "Segoe UI";
+    color: whitesmoke;
+    font-size: 4vh;
+  }
+
+  #formulario{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    left: -10vw;
+    background-color: rgb(72,101,129);
+    place-items: center;
+    box-shadow: 0.0vw 0.5vw 5vh rgb(8, 23, 37);
+    z-index: 2;
+  }
+
+  #account-submit{
+    flex-direction: column;
+    position: absolute;
+    left: 43vw;
+    top: 80vh;
+    font-family: Roboto, system-ui, "Segoe UI";
+    font-size: 2vh;
+    color: whitesmoke;
+    z-index: 2;
+  }
+  
+  #account-button{
+    background-color: rgb(188,204,220);
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    color: rgb(16,42,67) ;
+    padding: 1em 2em;
+    margin: 1vh;
+
+  }
